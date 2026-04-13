@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS Escola
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
+USE Escola;
+
+CREATE TABLE IF NOT EXISTS Alunos (
+    Id    INT          NOT NULL AUTO_INCREMENT,
+    Nome  VARCHAR(100) NOT NULL,
+    Idade INT          NOT NULL,
+    PRIMARY KEY (Id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
